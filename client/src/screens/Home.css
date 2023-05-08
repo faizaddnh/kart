@@ -1,0 +1,88 @@
+html {
+    font-size: 100%;
+}
+
+body{
+    margin-top: 6rem;
+}
+
+section{
+    padding:2rem 9%;
+}
+.img{
+    width: 10rem;
+    height: 12rem;
+    border-radius:  1rem 1rem .3rem .3rem;
+}
+.flex{
+    
+    border: solid 2px yellow;
+    border-radius: 1rem;
+    text-align: center;
+    background: linear-gradient(to top, #ee18b8, #f10505,rgb(243, 243, 52));
+}
+.button{
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid blue;
+    height: 2rem;
+    width: 8rem;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: blue;
+    color: white;
+    border: 2px solid gold;
+}
+.flex .button{
+    margin: .5rem 1.5rem 1rem 1.5rem;
+}
+button{
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+
+
+.grid-display{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:.5rem;
+    height: 18rem;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px){
+    html {
+        font-size: 65%;
+    }
+    section {
+        padding: 2rem 4%;
+    }
+    .grid-display{
+        grid-template-columns:repeat(3,1fr);
+    }
+    .button{
+        font-size: 1rem;
+        padding: 0;
+        height: 2.5rem;
+    }
+    
+}
